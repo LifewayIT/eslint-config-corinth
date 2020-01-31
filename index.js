@@ -1,9 +1,16 @@
 module.exports = {
+  plugins: [
+    'jest',
+    'import'
+  ],
   extends: [
     'eslint:recommended',
+    'plugin:jest/recommended',
+    'plugin:import/recommended'
   ],
   env: {
     es6: true,
+    jest: true,
   },
   parser: 'babel-eslint',
   parserOptions: {
@@ -18,6 +25,8 @@ module.exports = {
     'no-unused-vars': ['error', { 'args': 'none', 'ignoreRestSiblings': true }],
     'prefer-const': 'warn',
     'quotes': ['warn', 'single'],
-    'semi': 'error'
+    'semi': 'error',
+
+    'jest/expect-expect': 'error',
   }
 };

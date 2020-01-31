@@ -11,5 +11,8 @@
   "license": "ISC",
   "peerDependencies": {
     "eslint": ">= 6"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.3"
   }
 }

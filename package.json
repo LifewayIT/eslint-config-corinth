@@ -1,0 +1,12 @@
+{
+  "name": "eslint-config-corinth",
+  "version": "1.0.0",
+  "description": "The base ESLint Config for the Corith Team",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Corinth",
+  "license": "ISC"
+}

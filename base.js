@@ -27,6 +27,8 @@ module.exports = {
     'quotes': ['warn', 'single'],
     'semi': 'error',
 
+    'import/no-extraneous-dependencies': 'error',
+
     'jest/expect-expect': 'error',
   },
 };

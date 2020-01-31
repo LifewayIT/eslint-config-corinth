@@ -8,5 +8,8 @@
     "eslintconfig"
   ],
   "author": "Corinth",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": ">= 6"
+  }
 }

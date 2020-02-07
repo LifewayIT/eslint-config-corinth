@@ -28,6 +28,9 @@ module.exports = {
     'semi': 'error',
 
     'import/no-extraneous-dependencies': 'error',
+    'import/extensions': ['warn', 'always', {
+      js: 'never'
+    }],
 
     'jest/expect-expect': 'error',
   },

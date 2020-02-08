@@ -50,3 +50,4 @@ All of the version requirements of these dependencies are very loose, just to en
 
 **Additional optional dependencies:**
  - `eslint-plugin-react >= 7` - when using the `browser` config
+ - `eslint-plugin-react-hooks >= 2` - when using the `browser` config

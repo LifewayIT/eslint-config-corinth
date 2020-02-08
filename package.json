@@ -15,7 +15,8 @@
     "eslint-plugin-import": ">= 2"
   },
   "optionalDependencies": {
-    "eslint-plugin-react": ">= 7"
+    "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react-hooks": ">= 2",
   },
   "dependencies": {
     "babel-eslint": "^10.0.3"

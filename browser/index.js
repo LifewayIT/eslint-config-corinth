@@ -1,8 +1,14 @@
 module.exports = {
   extends: [
     require.resolve('../base/index.js'),
-    require.resolve('./react.js')
+    'plugin:import/react',
+    require.resolve('./react.js'),
   ],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   env: {
     browser: true
   },

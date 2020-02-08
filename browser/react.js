@@ -1,12 +1,9 @@
 module.exports = {
   plugins: [
-    'react',
-    //jsx-a11y
-    //react-hooks
+    'react'
   ],
   extends: [
     'plugin:react/recommended',
-    'plugin:import/react'
   ],
   rules: {
     'jsx-quotes': ['error', 'prefer-double'],

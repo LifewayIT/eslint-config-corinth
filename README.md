@@ -37,3 +37,16 @@ This config exposes several configs:
  - `browser`: Inherits from the base config, configured explicitly for Browser projects
 
 Extending `corinth` is the same as directly extending the `base`
+
+## Dependencies
+
+This package exposes several peer and optional dependencies that will need to be installed in your project (as devDependencies). This is the method recommended by ESLint ([see docs](https://eslint.org/docs/developer-guide/shareable-configs#publishing-a-shareable-config)).
+All of the version requirements of these dependencies are very loose, just to enfoce a minimum version that works.
+
+**Required by all configs:**
+ - `eslint >= 6`
+ - `eslint-plugin-jest >= 23`
+ - `eslint-plugin-import >= 2`
+
+**Additional optional dependencies:**
+ - `eslint-plugin-react >= 7` - when using the `browser` config

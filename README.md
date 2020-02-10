@@ -35,6 +35,8 @@ This config exposes several configs:
  - `base`: The base config
  - `node`: Inherits from the base config, configured explicitly for NodeJS projects
  - `browser`: Inherits from the base config, configured explicitly for Browser projects
+ - `typescript`: Does **not** inherit from the base config, use this in tandem with the base config for linting typescript files.
+Can be used inside an `overrides` block in the eslint config to apply these rules only to `.ts` files ([see docs](https://eslint.org/docs/user-guide/configuring#configuration-based-on-glob-patterns))
 
 Extending `corinth` is the same as directly extending the `base`
 
@@ -52,3 +54,5 @@ All of the version requirements of these dependencies are very loose, just to en
  - `eslint-plugin-react >= 7` - when using the `browser` config
  - `eslint-plugin-react-hooks >= 2` - when using the `browser` config
  - `eslint-plugin-jsx-a11y >= 6.2` - when using the `browser` config
+ - `@typescript-eslint/parser : ^2.19.0` - when using the `typescript` config
+ - `@typescript-eslint/eslint-plugin : ^2.19.0` - when using the `typescript` config

@@ -47,12 +47,12 @@ All of the version requirements of these dependencies are very loose, just to en
 
 **Required by all configs:**
  - `eslint >= 6`
- - `eslint-plugin-jest >= 23`
- - `eslint-plugin-import >= 2`
+ - `eslint-plugin-jest : ^23.6.0`
+ - `eslint-plugin-import : ^2.20.0`
 
 **Additional optional dependencies:**
- - `eslint-plugin-react >= 7` - when using the `browser` config
- - `eslint-plugin-react-hooks >= 2` - when using the `browser` config
- - `eslint-plugin-jsx-a11y >= 6.2` - when using the `browser` config
+ - `eslint-plugin-react : ^7.18.3` - when using the `browser` config
+ - `eslint-plugin-react-hooks : ^2.0.0` - when using the `browser` config
+ - `eslint-plugin-jsx-a11y : ^6.2.3` - when using the `browser` config
  - `@typescript-eslint/parser : ^2.19.0` - when using the `typescript` config
  - `@typescript-eslint/eslint-plugin : ^2.19.0` - when using the `typescript` config

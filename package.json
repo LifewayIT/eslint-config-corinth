@@ -11,15 +11,15 @@
   "license": "ISC",
   "peerDependencies": {
     "eslint": ">= 6",
-    "eslint-plugin-jest": ">= 23",
-    "eslint-plugin-import": ">= 2"
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jest": "^23.6.0"
   },
   "optionalDependencies": {
-    "eslint-plugin-react": ">= 7",
-    "eslint-plugin-react-hooks": ">= 2",
-    "eslint-plugin-jsx-a11y": ">= 6.2",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
     "@typescript-eslint/parser": "^2.19.0",
-    "@typescript-eslint/eslint-plugin": "^2.19.0"
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.0.0"
   },
   "dependencies": {
     "babel-eslint": "^10.0.3"

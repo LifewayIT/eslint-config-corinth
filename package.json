@@ -17,6 +17,7 @@
   "optionalDependencies": {
     "eslint-plugin-react": ">= 7",
     "eslint-plugin-react-hooks": ">= 2",
+    "eslint-plugin-jsx-a11y": ">= 6.2"
   },
   "dependencies": {
     "babel-eslint": "^10.0.3"

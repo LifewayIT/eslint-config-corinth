@@ -12,11 +12,11 @@ To use, just extend from this config in your `.eslintrc`:
 
 ```json
 {
-  "extends": "corinth"
+  "extends": ["corinth"]
 }
 ```
 
-Optionally, you can extend any of the other provided configs ([see all below](#Configs)) and add/override additionaly rules:
+Optionally, you can extend any of the other provided configs ([see all below](#Configs)) and add/override additional rules:
 
 ```json
 {
@@ -38,7 +38,7 @@ This config exposes several configs:
  - `typescript`: Does **not** inherit from the base config, use this in tandem with the base config for linting typescript files.
 Can be used inside an `overrides` block in the eslint config to apply these rules only to `.ts` files ([see docs](https://eslint.org/docs/user-guide/configuring#configuration-based-on-glob-patterns))
 
-Extending `corinth` is the same as directly extending the `base`
+Extending `corinth` is the same as directly extending the `base` config.
 
 ## Dependencies
 

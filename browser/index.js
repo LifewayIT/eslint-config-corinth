@@ -1,15 +1,17 @@
-const { ifInstalled } = require('../utils/package');
+const { pluginConfigs } = require('../utils/plugins');
 
 module.exports = {
   extends: [
     require.resolve('../base/index.js'),
     'plugin:import/react',
-    require.resolve('./react.js'),
-    require.resolve('./react-hooks.js'),
-    require.resolve('./jsx-a11y.js'),
-    ifInstalled('eslint-plugin-testing-library', require.resolve('./testing-library.js')),
-    ifInstalled('eslint-plugin-jest-dom', require.resolve('./jest-dom.js')),
-  ].filter(x => x != null),
+    ...pluginConfigs([
+      'react',
+      'react-hooks',
+      'jsx-a11y',
+      'testing-library',
+      'jest-dom'
+    ])
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,

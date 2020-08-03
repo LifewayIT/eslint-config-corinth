@@ -38,7 +38,6 @@ module.exports = {
     'react/jsx-wrap-multilines': 'warn',
     'react/jsx-equals-spacing': ['warn', 'never'],
     'react/jsx-indent': ['warn', 2],
-    'react/jsx-filename-extension': ['warn', { extensions: ['.jsx'] }],
     'react/no-unused-prop-types': 'warn',
     'react/jsx-tag-spacing': 'error',
     'react/no-array-index-key': 'warn',

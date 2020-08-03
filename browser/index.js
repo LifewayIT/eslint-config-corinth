@@ -4,7 +4,9 @@ module.exports = {
     'plugin:import/react',
     require.resolve('./react.js'),
     require.resolve('./react-hooks.js'),
-    require.resolve('./jsx-a11y.js')
+    require.resolve('./jsx-a11y.js'),
+    require.resolve('./testing-library.js'),
+    require.resolve('./jest-dom.js'),
   ],
   parserOptions: {
     ecmaFeatures: {

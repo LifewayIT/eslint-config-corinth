@@ -1,3 +1,5 @@
+const path = require('path');
+
 const isPackageInstalled = (path) => {
   try {
     require(path);
@@ -7,22 +9,32 @@ const isPackageInstalled = (path) => {
   }
 };
 
-const ifInstalled = (package, config) =>
-  isPackageInstalled(package) ? config : undefined;
+const ifInstalled = (requestor, package, config) => {
+  if (isPackageInstalled(package)) {
+    return [config];
+  } else {
+    console.warn(`${package} is required by eslint-config-corinth/${requestor}, without it some functionality may be missing.`);
+    return [];
+  }
+}
 
 
 const getPluginName = (plugin) => Array.isArray(plugin)
   ? plugin
   : [`eslint-plugin-${plugin}`, `./${plugin}.js`];
 
-const useIfInstalled = (plugin, config) =>
-  isPackageInstalled(plugin)
-    ? require.resolve(config)
-    : undefined;
+const useIfInstalled = (requestor, basePath, plugin, config) => {
+  if (isPackageInstalled(plugin)) {
+    return path.resolve(basePath, config);
+  } else {
+    console.warn(`${plugin} is required by eslint-config-corinth/${requestor}, without it some functionality may be missing.`);
+    return undefined;
+  }
+}
 
-const pluginConfigs = (plugins) => plugins
+const pluginConfigs = (requestor, basePath, plugins) => plugins
   .map(getPluginName)
-  .map(([plugin, config]) => useIfInstalled(plugin, config))
+  .map(([plugin, config]) => useIfInstalled(requestor, basePath, plugin, config))
   .filter(c => c != null);
 
 

@@ -1,10 +1,10 @@
-const { pluginConfigs } = require('../utils/plugins');
+const { pluginConfigs, ifInstalled } = require('../utils/plugins');
 
 module.exports = {
   extends: [
     require.resolve('../base/index.js'),
-    'plugin:import/react',
-    ...pluginConfigs([
+    ...ifInstalled('browser', 'eslint-plugin-import', 'plugin:import/react'),
+    ...pluginConfigs('browser', __dirname, [
       'react',
       'react-hooks',
       'jsx-a11y',

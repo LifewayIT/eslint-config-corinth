@@ -11,5 +11,6 @@ module.exports = {
     'import/extensions': ['warn', 'always', {
       js: 'never'
     }],
+    'import/prefer-default-export': 'off',
   },
 };

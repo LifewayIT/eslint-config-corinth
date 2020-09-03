@@ -15,9 +15,9 @@ module.exports = {
     'indent': ['warn', 2],
     'no-console': 'error',
     'no-trailing-spaces': 'warn',
-    'no-unused-vars': ['error', { 'args': 'none', 'ignoreRestSiblings': true }],
+    'no-unused-vars': ['error', { args: 'none', ignoreRestSiblings: true }],
     'prefer-const': 'warn',
-    'quotes': ['warn', 'single'],
+    'quotes': ['warn', 'single', { avoidEscape: true }],
     'semi': 'error',
   },
 };

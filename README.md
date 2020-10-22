@@ -47,14 +47,14 @@ All of the version requirements of these dependencies are very loose, just to en
 
 **Required by all configs:**
  - `eslint >= 6`
- - `eslint-plugin-jest : ^23.6.0`
- - `eslint-plugin-import : ^2.20.0`
+ - `eslint-plugin-jest : >=23.6.0`
+ - `eslint-plugin-import : >=2.20.0`
 
 **Additional optional dependencies:**
- - `eslint-plugin-react : ^7.18.3` - when using the `browser` config
- - `eslint-plugin-react-hooks : ^2.0.0` - when using the `browser` config
- - `eslint-plugin-jsx-a11y : ^6.2.3` - when using the `browser` config
- - `eslint-plugin-testing-library : ^3.4.0` - when using the `browser` config
- - `eslint-plugin-jest-dom : ^3.1.4` - when using the `browser` config
- - `@typescript-eslint/parser : ^2.19.0` - when using the `typescript` config
- - `@typescript-eslint/eslint-plugin : ^2.19.0` - when using the `typescript` config
+ - `eslint-plugin-react : >=7.18.3` - when using the `browser` config
+ - `eslint-plugin-react-hooks : >=2.0.0` - when using the `browser` config
+ - `eslint-plugin-jsx-a11y : >=6.2.3` - when using the `browser` config
+ - `eslint-plugin-testing-library : >=3.4.0` - when using the `browser` config
+ - `eslint-plugin-jest-dom : >=3.1.4` - when using the `browser` config
+ - `@typescript-eslint/parser : >=2.19.0` - when using the `typescript` config
+ - `@typescript-eslint/eslint-plugin : >=2.19.0` - when using the `typescript` config

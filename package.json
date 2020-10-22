@@ -14,7 +14,7 @@
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-jest": "^23.6.0"
   },
-  "optionalDependencies": {
+  "optionalPeerDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.19.0",
     "@typescript-eslint/parser": "^2.19.0",
     "eslint-plugin-jest-dom": "^3.1.4",

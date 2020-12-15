@@ -46,7 +46,8 @@ This package exposes several peer and optional dependencies that will need to be
 All of the version requirements of these dependencies are very loose, just to enfoce a minimum version that works.
 
 **Required by all configs:**
- - `eslint >= 6`
+ - `@babel/core : >=7.11.0`
+ - `eslint : >=6`
  - `eslint-plugin-jest : >=23.6.0`
  - `eslint-plugin-import : >=2.20.0`
 
